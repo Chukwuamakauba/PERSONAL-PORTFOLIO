@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: #DE5D83;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 0;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .subhead {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  margin-bottom: -1em;
+  margin-top: 5em;
+  font-size: 1.1em;
+}
+.left-col .h1 {
+  font-size: 2em;
+  margin-top: 2em;
+  line-height: 1.2em;
+}
+span{
+    color: black;
+}
+.primary-cta {
+  text-decoration: none;
+  background-color: white;
+  padding: 0.6em 1.3em;
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  border-radius: 5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: #20272E;
+}
+
+.hero img {
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 3em;
+  margin-bottom: -90px;
+}
+
+section.About-section{
+  background: white;
+  color:black;
+  text-align: center;
+}
+section.About-section .container {
+  padding: 60px 5px;
+}
+.imagess{
+    border-radius: 50%;
+    width: 50%;
+    align-content: center;
+}
+.projects-section{
+    position: relative;
+}
+.project-container{
+    border-color: #868583;
+    background: white;
+    text-align: center;
+}
+.project-img{
+border-radius: 2rem;
+width: 90%;
+height: 80%;
+margin-top: 2rem;
+}
+h2.heading{
+    margin: 1rem;
+    color: black;
+    text-align: center;
+}
+h3{
+    margin: 0.4rem;
+    color: black;
+}
+.project-btn{
+    color: black;
+    border-color: #20272E;
+    background-color: white;
+    padding: 9px;
+    width: 32%;
+    border-radius: 10px;
+}
+
+section.contact-section .container {
+  padding: 0 50px;
+}
+
+h2 {
+  font-size: 2.1em;
+}
+
+label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+input, textarea {
+  resize: none;
+  width: 100%;
+  padding: 0.8em;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  justify-content: center;
+  margin-bottom: 1.7em;
+}
+
+.send-message-cta {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.9em;
+  border-radius: 2em;
+  margin-top: -2em;
+  margin-bottom: 1.2em;
+  cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  border: none;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+nav ul.primary-navbar {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: flex;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+    text-decoration: none;
+  }
+  .navbar nav ul.primary-navbar {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.btn a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.btn a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 9em 4em;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .watch-video-cta{
+    font-size: 1.16em;
+    font-weight: bold;
+
+  }
+  .watch-video-cta img {
+    width: 15%;
+    position: relative;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .hero-cta {
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.features-list li {
+    font-size: 1.4em;
+  }
+  ul.features-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .features-section {
+    position: relative;
+  }
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  .testimonial-section ul {
+    display: flex;
+  }
+  .testimonial-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url(/images/dots.svg.svg) no-repeat;
+    left: 4.5em;
+    top: 2em;
+  }
+}

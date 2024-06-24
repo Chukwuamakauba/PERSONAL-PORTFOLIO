@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chukwumaka Ubakanma</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class= "logo" href="">Chukwuamaka<span>Uba</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg.svg" alt="Menu Button">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg.svg" alt="Exit Button">
+                <ul class="primary-navbar">
+                   <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="images/smile-me.jpg">
+            <div class="left-col">
+                <p class="subhead">HELLO</p>
+                <h1>I'm <span>Amaka<br> a</span> Frontend Developer</h1>
+                <p class="content">Welcome to my portfolio!</p>
+
+                <div class="hero-cta">
+                    <a href="#about" class="primary-cta">More about me...</a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section  id="about" class="About-section">
+        <div class="container">
+           <img class="imagess" src="images/blackimg.JPG">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Frontend Developer</h5>
+                <p class="about-content">I am Chukwuamaka Ubakanma, a creative frontend developer with a passion for creating beautiful, responsive, and user-friendly websites. A responsive design makes your website accessible to all users, regardless of their device.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="projects-section">
+        <h2 class="heading">Recent<span> Projects</span></h2>
+        <div class="projectss">
+        <div 
+        class="project-container">
+            <div class="project-box">
+            <img src="/images/mobile-design-blog.jpg" class="project-img"/>
+            </div>
+            <h3>Blog Preview Card</h3>
+            <div class="btn-container">
+               <button class="project-btn" onclick="location.href='https://github.com'"> Github
+               </button>
+               <button class="project-btn"
+               onclick="location.href='https://blog-preview-card-ii6i.vercel.app/'"> Live Demo
+            </button>
+            </div>
+        </div>
+        <div 
+        class="project-container">
+            <div class="project-box">
+            <img src="/images/mobile-design-faq.jpg" class="project-img"/>
+            </div>
+            <h3>FAQ Accordion</h3>
+            <div class="btn-container">
+               <button class="project-btn" onclick="location.href='https://github.com'"> Github
+               </button>
+               <button class="project-btn"
+               onclick="location.href='https://fa-qs-page-5q7t.vercel.app/'"> Live Demo
+            </button>
+            </div>
+        </div>
+        <div 
+        class="project-container">
+            <div class="project-box">
+            <img src="/images/mobile-design-linkk.jpg" class="project-img"/>
+            </div>
+            <h3>Social Link Page</h3>
+            <div class="btn-container">
+               <button class="project-btn" onclick="location.href='https://github.com'"> Github
+               </button>
+               <button class="project-btn"
+               onclick="location.href='https://social-link-page-utlb.vercel.app/'"> Live Demo
+            </button>
+            </div>
+        </div>
+        <div 
+        class="project-container">
+            <div class="project-box">
+            <img src="/images/mobile-design.jpg" class="project-img"/>
+            </div>
+            <h3>Newsletter Page Signup</h3>
+            <div class="btn-container">
+               <button class="project-btn" onclick="location.href='https://github.com'"> Github
+               </button>
+               <button class="project-btn"
+               onclick="location.href='https://newsletter-page-one.vercel.app/'"> Live Demo
+            </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-box">
+        <div class="contact-container">
+        <img src="/images/email.png" class="email"/>
+        <p><a href="mailto:amakaubakanma@gmail.com">amakaubakanma@gmail.com</a></p>
+        </div>
+        <div class="contact-container">
+        <img src="/images/linkedin.png" class="linked"/>
+        <p><a href="https://www.linkedin.com/in/ubakanma-chukwuamaka-9a13b8198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+        </div>
+    </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
